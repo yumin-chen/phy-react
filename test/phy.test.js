@@ -2,11 +2,14 @@
 
 const assert = require('assert');
 
-const { h, isVNode } = require('../');
-const { Fragment } = require('preact');
+const { h: h0, isVNode } = require('../');
+const { Fragment, createElement } = require('preact');
 const render = require('preact-render-to-string');
 
-const { h: h2, Component } = require('../');
+const { h: h1, Component } = require('../');
+
+const h = h0.bind(null, createElement);
+const h2 = h1.bind(null, createElement);
 
 function Comp(props) {
   const attrs = Object.assign({}, props);

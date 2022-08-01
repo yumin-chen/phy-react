@@ -8,16 +8,9 @@
     "resolveJsonModule": true,
     "strict": true,
     "moduleResolution": "node",
-    "types": [
-      "node",
-      "mocha"
-    ],
+    "types": ["node", "mocha"],
     "esModuleInterop": true
   },
   "exclude": [],
-  "include": [
-    "typings/**/*.d.ts",
-    "*.js",
-    "lib/**/*.js"
-  ]
+  "include": ["typings/**/*.d.ts", "*.js", "lib/**/*.js"]
 }

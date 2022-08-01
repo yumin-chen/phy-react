@@ -1,18 +1,20 @@
 {
-  "name": "phy",
-  "version": "4.2.7",
-  "description": "Phy is a set of minimalist hyperscript helpers for Preact",
+  "name": "phy-react",
+  "version": "0.1.1",
+  "description": "Phy-react is a fork of phy binding to React instead of Preact",
   "license": "BSD-3-Clause",
   "main": "lib/phy.js",
-  "homepage": "https://github.com/groupon/phy",
+  "homepage": "https://github.com/yumin-chen/phy-emotion",
   "repository": {
     "type": "git",
-    "url": "https://github.com/groupon/phy"
+    "url": "https://github.com/yumin-chen/phy-emotion"
   },
   "bugs": {
-    "url": "https://github.com/groupon/phy/issues"
+    "url": "https://github.com/yumin-chen/phy-emotion/issues"
   },
   "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "lint": "npm-run-all lint:*",
     "lint:js": "eslint .",
     "lint:tsc": "tsc",
@@ -36,24 +38,24 @@
   },
   "types": "lib/typedefs.d.ts",
   "dependencies": {
-    "preact": "^10.5.13"
+    "react": "latest"
   },
   "devDependencies": {
-    "@types/mocha": "5.2.7",
-    "@types/node": "^8",
-    "c8": "^7.7.2",
-    "eslint": "^7.27.0",
-    "eslint-config-groupon": "^10.0.2",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-mocha": "^8.2.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "mocha": "^10.0.0",
-    "nlm": "^5.5.0",
-    "npm-run-all": "^4.1.5",
-    "preact-render-to-string": "^5.1.19",
-    "prettier": "^2.3.0",
-    "typescript": "3.6.2"
+    "@types/mocha": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "c8": "latest",
+    "eslint": "latest",
+    "eslint-config-groupon": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-mocha": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-prettier": "latest",
+    "mocha": "latest",
+    "nlm": "latest",
+    "npm-run-all": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   },
   "author": {
     "name": "David Bushong",

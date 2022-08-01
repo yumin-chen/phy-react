@@ -1,24 +1,18 @@
-import { Component, ComponentChildren, ComponentType, VNode } from 'preact';
-import p from 'preact';
+import { ComponentType, ReactNode } from 'react';
 
-declare function isPreactNode(obj: object): boolean;
-
-declare function phy(fragments: (string | ComponentType)[]): VNode;
+declare function phy(fragments: (string | ComponentType)[]): ReactNode;
 declare function phy(
   selectorOrComp: string | ComponentType,
-  ...kids: ComponentChildren[]
-): VNode;
+  ...kids: ReactNode[]
+): ReactNode;
 declare function phy(
   selectorOrComp: string | ComponentType,
   attrs: Readonly<Record<string, any>>,
-  ...kids: ComponentChildren[]
-): VNode;
+  ...kids: ReactNode[]
+): ReactNode;
 
 declare namespace phy {
   let h: typeof phy;
-  let Component: typeof p.Component;
-  let render: typeof p.render;
-  let isVNode: typeof isPreactNode;
 }
 
 export = phy;
