@@ -1,6 +1,6 @@
 {
   "name": "phy-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Phy-react is a fork of phy binding to React instead of Preact",
   "license": "BSD-3-Clause",
   "main": "lib/phy.js",
