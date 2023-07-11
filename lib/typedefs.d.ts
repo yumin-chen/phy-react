@@ -1,15 +1,15 @@
-import { ComponentType, ReactNode } from 'react';
+import { ComponentType, ReactElement, ReactNode } from 'react';
 
-declare function phy(fragments: (string | ComponentType)[]): ReactNode;
+declare function phy(component: (string | ComponentType)[]): ReactElement;
 declare function phy(
-  selectorOrComp: string | ComponentType,
-  ...kids: ReactNode[]
-): ReactNode;
+  comopnent: string | ComponentType,
+  ...children: ReactNode[]
+): ReactElement;
 declare function phy(
-  selectorOrComp: string | ComponentType,
-  attrs: Readonly<Record<string, any>>,
-  ...kids: ReactNode[]
-): ReactNode;
+  comopnent: string | ComponentType,
+  props: Readonly<Record<string, any>> | undefined,
+  ...children: ReactNode[]
+): ReactElement;
 
 declare namespace phy {
   let h: typeof phy;
